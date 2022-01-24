@@ -1,0 +1,15 @@
+// Who's Harper? Section
+.aboutSummary {
+    background-color: $whiteShade;
+    padding-top: 110px; 
+    padding-bottom: 110px; 
+
+    .wrapper {
+        display: flex; 
+        justify-content: flex-end;
+    }
+    
+    .aboutContainer {
+        width: 50%; 
+    }
+}

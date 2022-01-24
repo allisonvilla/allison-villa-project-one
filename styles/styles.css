@@ -384,6 +384,8 @@ header {
 .headerContainer .imgContainer img {
   -webkit-box-shadow: 20px 18px white;
           box-shadow: 20px 18px white;
+  position: relative;
+  top: 60px;
 }
 .headerContainer .headerTitle {
   display: -webkit-box;
@@ -396,11 +398,29 @@ header {
 .headerContainer .headerTitle h1 {
   font-size: 7.5rem;
   position: relative;
+  margin-left: 84px;
 }
 .headerContainer .headerTitle img {
   position: absolute;
   bottom: 6px;
   right: -50px;
+}
+
+.aboutSummary {
+  background-color: #f6f6f6;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.aboutSummary .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.aboutSummary .aboutContainer {
+  width: 50%;
 }
 
 footer {

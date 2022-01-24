@@ -11,6 +11,8 @@ header {
     .imgContainer {
         img {
             box-shadow: 20px 18px white; 
+            position: relative; 
+            top: 60px; 
         }
     }
     
@@ -21,6 +23,7 @@ header {
         h1 {
             font-size: 7.5rem; 
             position: relative; 
+            margin-left: 84px; 
         }
 
         img {
