@@ -370,6 +370,7 @@ button:hover, button:focus {
 
 header {
   background-color: #b9dde7;
+  height: 100vh;
 }
 
 .headerContainer {
@@ -378,6 +379,11 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
+}
+.headerContainer .imgContainer img {
+  -webkit-box-shadow: 20px 18px white;
+          box-shadow: 20px 18px white;
 }
 .headerContainer .headerTitle {
   display: -webkit-box;
