@@ -3,4 +3,78 @@
 
 html {
     font-size: 125%; 
+    // 1rem = 20px 
+}
+
+body {
+    font-family: $bodyFont;
+    font-size: 1rem;
+    color: $black;
+}
+
+h1, h2, h3, h4, blockquote {
+    font-family: $headingFont;
+    font-weight: bold;
+    text-transform: uppercase; 
+    color: $black; 
+    margin: 0;
+}
+
+h1 {
+    font-size: 4rem; 
+    line-height: 92px; 
+    letter-spacing: 0.05rem; 
+}
+
+h2 {
+    font-size: 2.1rem; 
+    letter-spacing: 0.05rem; 
+}
+
+h3 {
+    font-size: 1.6rem; 
+    letter-spacing: 0.05rem; 
+}
+
+h4 {
+    font-size: 1.2rem; 
+    letter-spacing: 0.05rem; 
+}
+
+p {
+    font-family: $bodyFont;
+    line-height: 32px; 
+    letter-spacing: 0rem; 
+    color: $black; 
+}
+
+ul, li, a, input {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav {
+    ul {
+        a {
+            font-family: $headingFont; 
+            font-size: 1rem; 
+            color: $black; 
+            line-height: 29px; 
+            letter-spacing: 0.05rem;
+            text-align: right; 
+            text-transform: uppercase; 
+            font-weight: bold; 
+        }
+    }
 }

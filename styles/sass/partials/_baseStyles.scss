@@ -1,0 +1,26 @@
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto; 
+}
+
+button {
+    font-family: $headingFont;
+    font-size: 1rem; 
+    color: $black; 
+    line-height: 32px; 
+    letter-spacing: 0.05rem; 
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase; 
+    background-color: $accent; 
+    border: none; 
+    padding: 16px 34px; 
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus {
+        background-color: $lightBlueGrey; 
+    }
+}
