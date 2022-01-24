@@ -331,6 +331,38 @@ button:hover, button:focus {
   background-color: #b9dde7;
 }
 
+.mainNav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-color: #b9dde7;
+}
+.mainNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mainNav ul li {
+  margin: 20px 50px 20px 0;
+}
+.mainNav ul a.logo {
+  font-size: 2rem;
+}
+.mainNav ul a:hover,
+.mainNav ul a:focus {
+  color: white;
+}
+.mainNav ul a.currentPage {
+  color: white;
+}
+.mainNav ul a.currentPage:hover, .mainNav ul a.currentPage:focus {
+  color: #171717;
+}
+
 footer {
   text-align: center;
   background-color: #171717;
