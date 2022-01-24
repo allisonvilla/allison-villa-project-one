@@ -307,7 +307,7 @@ nav ul a {
 
 .wrapper {
   max-width: 1260px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -332,8 +332,7 @@ button:hover, button:focus {
 }
 
 .mainNav {
-  position: fixed;
-  width: 100%;
+  position: sticky;
   top: 0;
   z-index: 10;
   background-color: #b9dde7;
@@ -347,10 +346,12 @@ button:hover, button:focus {
           justify-content: center;
 }
 .mainNav ul li {
-  margin: 20px 50px 20px 0;
+  margin: 20px 25px 20px 25px;
 }
 .mainNav ul a.logo {
   font-size: 2rem;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .mainNav ul a:hover,
 .mainNav ul a:focus {
