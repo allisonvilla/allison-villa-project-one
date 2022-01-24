@@ -1,0 +1,24 @@
+header {
+    background-color: $lightBlueGrey; 
+}
+
+.headerContainer {
+    display: flex; 
+    flex-wrap: wrap;
+    
+    .headerTitle {
+        display: flex; 
+        align-items: center; 
+
+        h1 {
+            font-size: 7.5rem; 
+            position: relative; 
+        }
+
+        img {
+            position: absolute; 
+            bottom: 6px;
+            right: -50px; 
+        }
+    }
+}

@@ -4,6 +4,10 @@
     margin: 0 auto; 
 }
 
+img {
+    max-width: 100%; 
+}
+
 button {
     font-family: $headingFont;
     font-size: 1rem; 
