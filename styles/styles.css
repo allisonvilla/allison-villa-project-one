@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -306,8 +305,8 @@ nav ul a {
 }
 
 .wrapper {
-  max-width: 1260px;
   width: 80%;
+  max-width: 1260px;
   margin: 0 auto;
 }
 
