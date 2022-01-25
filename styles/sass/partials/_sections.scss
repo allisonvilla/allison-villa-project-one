@@ -61,22 +61,61 @@
     }
 
     .textContainer {
-        width: 50%; 
+        width: 50%;  
+
+        p {
+            margin-bottom: 35px; 
+        }
+
+        button {
+            padding: 9px 28px; 
+        }
     }
 }
 
 .blogPreviewOne {
     .imgContainer {
+        position: relative;
+        top: -45px; 
+
         img {
             box-shadow: 20px 20px $greyBlue, -155px 20px $greyBlue;
+        }
+    }
+
+    .textContainer {
+        padding-left: 120px; 
+        padding-top: 95px; 
+
+        button {
+            margin-bottom: 45px; 
         }
     }
 }
 
 .blogPreviewTwo {
     .imgContainer {
+        position: relative;
+        bottom: -30px; 
+
         img {
             box-shadow: 20px 20px $lightBlueGrey, 155px 20px $lightBlueGrey;
+        }
+    }
+
+    .textContainer {
+        padding-right: 125px;
+        padding-top: 45px; 
+        display: flex;
+        flex-direction: column;
+
+        .rightAlignedButton {
+             display: flex; 
+             justify-content: flex-end; 
+
+            button {
+                margin-bottom: 80px; 
+            }
         }
     }
 }
@@ -87,14 +126,26 @@
 
     .wrapper {
         display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;  
 
         .imgContainer {
-            width: 25%;
+            width: calc(25% - 20px);
+            margin-top: 170px;
+            margin-bottom: 110px;
+
+            img {
+                box-shadow: 20px 20px $duskBlue; 
+            }
         }
 
         .textContainer {
-            width: 75%; 
+            width: calc(75% - 125px); 
+            margin-top: 170px;
+            margin-left: 125px; 
+
+            p {
+                margin-bottom: 35px;
+            }
         }
     }
 }

@@ -481,15 +481,60 @@ header {
 .blogPreviewTwo .textContainer {
   width: 50%;
 }
+.blogPreviewOne .textContainer p,
+.blogPreviewTwo .textContainer p {
+  margin-bottom: 35px;
+}
+.blogPreviewOne .textContainer button,
+.blogPreviewTwo .textContainer button {
+  padding: 9px 28px;
+}
 
+.blogPreviewOne .imgContainer {
+  position: relative;
+  top: -45px;
+}
 .blogPreviewOne .imgContainer img {
   -webkit-box-shadow: 20px 20px #68b0c1, -155px 20px #68b0c1;
           box-shadow: 20px 20px #68b0c1, -155px 20px #68b0c1;
 }
+.blogPreviewOne .textContainer {
+  padding-left: 120px;
+  padding-top: 95px;
+}
+.blogPreviewOne .textContainer button {
+  margin-bottom: 45px;
+}
 
+.blogPreviewTwo .imgContainer {
+  position: relative;
+  bottom: -30px;
+}
 .blogPreviewTwo .imgContainer img {
   -webkit-box-shadow: 20px 20px #b9dde7, 155px 20px #b9dde7;
           box-shadow: 20px 20px #b9dde7, 155px 20px #b9dde7;
+}
+.blogPreviewTwo .textContainer {
+  padding-right: 125px;
+  padding-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blogPreviewTwo .textContainer .rightAlignedButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.blogPreviewTwo .textContainer .rightAlignedButton button {
+  margin-bottom: 80px;
 }
 
 .aboutJourney {
@@ -503,10 +548,21 @@ header {
       flex-wrap: wrap;
 }
 .aboutJourney .wrapper .imgContainer {
-  width: 25%;
+  width: calc(25% - 20px);
+  margin-top: 170px;
+  margin-bottom: 110px;
+}
+.aboutJourney .wrapper .imgContainer img {
+  -webkit-box-shadow: 20px 20px #227284;
+          box-shadow: 20px 20px #227284;
 }
 .aboutJourney .wrapper .textContainer {
-  width: 75%;
+  width: calc(75% - 125px);
+  margin-top: 170px;
+  margin-left: 125px;
+}
+.aboutJourney .wrapper .textContainer p {
+  margin-bottom: 35px;
 }
 
 .gallery .wrapper {
