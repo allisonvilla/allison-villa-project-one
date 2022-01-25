@@ -65,6 +65,22 @@
     }
 }
 
+.blogPreviewOne {
+    .imgContainer {
+        img {
+            box-shadow: 20px 20px $greyBlue, -155px 20px $greyBlue;
+        }
+    }
+}
+
+.blogPreviewTwo {
+    .imgContainer {
+        img {
+            box-shadow: 20px 20px $lightBlueGrey, 155px 20px $lightBlueGrey;
+        }
+    }
+}
+
 // About Harper's Journey
 .aboutJourney {
     background-color: $whiteShade;

@@ -482,6 +482,16 @@ header {
   width: 50%;
 }
 
+.blogPreviewOne .imgContainer img {
+  -webkit-box-shadow: 20px 20px #68b0c1, -155px 20px #68b0c1;
+          box-shadow: 20px 20px #68b0c1, -155px 20px #68b0c1;
+}
+
+.blogPreviewTwo .imgContainer img {
+  -webkit-box-shadow: 20px 20px #b9dde7, 155px 20px #b9dde7;
+          box-shadow: 20px 20px #b9dde7, 155px 20px #b9dde7;
+}
+
 .aboutJourney {
   background-color: #f6f6f6;
 }
