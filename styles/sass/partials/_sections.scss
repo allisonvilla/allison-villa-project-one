@@ -49,3 +49,50 @@
         }
     }
 }
+
+// Blog Post Previews
+.blogPreviewOne, 
+.blogPreviewTwo {
+    display: flex; 
+    flex-wrap: wrap; 
+
+    .imgContainer {
+        width: 50%; 
+    }
+
+    .textContainer {
+        width: 50%; 
+    }
+}
+
+// About Harper's Journey
+.aboutJourney {
+    background-color: $whiteShade;
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap; 
+
+        .imgContainer {
+            width: 25%;
+        }
+
+        .textContainer {
+            width: 75%; 
+        }
+    }
+}
+
+// Image Gallery 
+.gallery {
+    .wrapper {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between;
+
+        .imgContainer {
+            width: calc(33% - 36px); 
+            margin: 95px 18px; 
+        }
+    }
+}

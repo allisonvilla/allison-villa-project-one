@@ -465,6 +465,55 @@ header {
   padding-top: 15px;
 }
 
+.blogPreviewOne,
+.blogPreviewTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.blogPreviewOne .imgContainer,
+.blogPreviewTwo .imgContainer {
+  width: 50%;
+}
+.blogPreviewOne .textContainer,
+.blogPreviewTwo .textContainer {
+  width: 50%;
+}
+
+.aboutJourney {
+  background-color: #f6f6f6;
+}
+.aboutJourney .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.aboutJourney .wrapper .imgContainer {
+  width: 25%;
+}
+.aboutJourney .wrapper .textContainer {
+  width: 75%;
+}
+
+.gallery .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery .wrapper .imgContainer {
+  width: calc(33% - 36px);
+  margin: 95px 18px;
+}
+
 footer {
   text-align: center;
   background-color: #171717;
