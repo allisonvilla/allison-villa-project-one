@@ -367,12 +367,11 @@ button:hover, button:focus {
   color: #171717;
 }
 
-header {
+header.homepage {
   background-color: #b9dde7;
   height: 100vh;
 }
-
-.headerContainer {
+header.homepage .headerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,13 +379,13 @@ header {
       flex-wrap: wrap;
   position: relative;
 }
-.headerContainer .imgContainer img {
+header.homepage .headerContainer .imgContainer img {
   -webkit-box-shadow: 20px 18px white;
           box-shadow: 20px 18px white;
   position: relative;
   top: 60px;
 }
-.headerContainer .headerTitle {
+header.homepage .headerContainer .headerTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,12 +393,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-.headerContainer .headerTitle h1 {
+header.homepage .headerContainer .headerTitle h1 {
   font-size: 7.5rem;
   position: relative;
   margin-left: 84px;
 }
-.headerContainer .headerTitle img {
+header.homepage .headerContainer .headerTitle img {
   position: absolute;
   bottom: 6px;
   right: -50px;

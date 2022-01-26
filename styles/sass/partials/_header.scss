@@ -1,35 +1,36 @@
-header {
+// Homepage Header
+header.homepage {
     background-color: $lightBlueGrey; 
     height: 100vh; 
-}
 
-.headerContainer {
-    display: flex; 
-    flex-wrap: wrap;
-    position: relative; 
-
-    .imgContainer {
-        img {
-            box-shadow: 20px 18px white; 
-            position: relative; 
-            top: 60px; 
-        }
-    }
-    
-    .headerTitle {
+    .headerContainer {
         display: flex; 
-        align-items: center; 
+        flex-wrap: wrap;
+        position: relative; 
 
-        h1 {
-            font-size: 7.5rem; 
-            position: relative; 
-            margin-left: 84px; 
+        .imgContainer {
+            img {
+                box-shadow: 20px 18px white; 
+                position: relative; 
+                top: 60px; 
+            }
         }
+    
+        .headerTitle {
+            display: flex; 
+            align-items: center; 
 
-        img {
-            position: absolute; 
-            bottom: 6px;
-            right: -50px; 
+            h1 {
+                font-size: 7.5rem; 
+                position: relative; 
+                margin-left: 84px; 
+            }
+
+            img {
+                position: absolute; 
+                bottom: 6px;
+                right: -50px; 
+            }
         }
     }
 }
