@@ -404,6 +404,9 @@ header.homepage .headerContainer .headerTitle img {
   right: -50px;
 }
 
+header.subpage {
+  padding-bottom: 95px;
+}
 header.subpage .wrapper {
   position: relative;
 }
@@ -586,6 +589,11 @@ header.subpage .wrapper h1 {
   margin: 95px 18px;
 }
 
+header.subpage,
+.blogPost {
+  background-color: #f6f6f6;
+}
+
 section.blogPost .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -599,6 +607,8 @@ section.blogPost .wrapper .sideContentContainer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-right: 38px;
+  width: 30%;
 }
 section.blogPost .wrapper .sideContentContainer .sideAbout {
   display: -webkit-box;
@@ -608,6 +618,118 @@ section.blogPost .wrapper .sideContentContainer .sideAbout {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+section.blogPost .wrapper .mainBlogContainer {
+  width: calc(70% - 38px);
+}
+
+.sideAbout,
+.sideRecent {
+  background-color: white;
+  padding: 37px 37px;
+  margin-bottom: 16px;
+}
+
+.postContent {
+  background-color: white;
+  padding: 45px 40px;
+  margin-bottom: 30px;
+  border-bottom: 5px solid #227284;
+}
+
+.commentsContainer {
+  border-bottom: 5px solid #227284;
+  margin-bottom: 30px;
+}
+.commentsContainer .commentOne,
+.commentsContainer .commentTwo {
+  background-color: white;
+  padding: 45px 40px;
+}
+.commentsContainer .commentOne {
+  margin-bottom: 20px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 95px;
+}
+form #name {
+  margin-right: 10px;
+}
+form #name,
+form #email {
+  width: calc(50% - 5px);
+  border: none;
+  border-bottom: 5px solid transparent;
+  font-family: "Cabin", sans-serif;
+  padding: 30px 40px 20px 40px;
+}
+form #name::-webkit-input-placeholder, form #email::-webkit-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+form #name::-moz-placeholder, form #email::-moz-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+form #name:-ms-input-placeholder, form #email:-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+form #name::-ms-input-placeholder, form #email::-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+form #name::placeholder,
+form #email::placeholder {
+  color: #171717;
+  opacity: 1;
+}
+form #name:focus,
+form #email:focus {
+  outline: none;
+  border-bottom: 5px solid #227284;
+}
+form textarea {
+  width: 100%;
+  margin: 18px 0px;
+  border: none;
+  border-bottom: 5px solid transparent;
+  font-family: "Cabin", sans-serif;
+  padding: 45px 40px;
+  resize: none;
+}
+form textarea::-webkit-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+form textarea::-moz-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+form textarea:-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+form textarea::-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+form textarea::placeholder {
+  color: #171717;
+  opacity: 1;
+}
+form textarea:focus {
+  outline: none;
+  border-bottom: 5px solid #227284;
+}
+form button {
+  width: 100%;
 }
 
 footer {

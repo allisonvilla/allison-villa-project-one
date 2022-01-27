@@ -1,0 +1,52 @@
+form {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-bottom: 95px; 
+
+    #name {
+        margin-right: 10px; 
+    }
+
+    #name,
+    #email {
+        width: calc(50% - 5px); 
+        border: none; 
+        border-bottom: 5px solid transparent; 
+        font-family: $bodyFont; 
+        padding: 30px 40px 20px 40px; 
+
+        &::placeholder {
+            color: $black;
+            opacity: 1;
+        }
+
+        &:focus {
+            outline: none;
+            border-bottom: 5px solid $duskBlue; 
+        }
+    }
+
+    textarea {
+        width: 100%; 
+        margin: 18px 0px; 
+        border: none; 
+        border-bottom: 5px solid transparent; 
+        font-family: $bodyFont; 
+        padding: 45px 40px; 
+        resize: none; 
+
+        &::placeholder {
+            color: $black;
+            opacity: 1;
+        } 
+
+        &:focus {
+            outline: none;
+            border-bottom: 5px solid $duskBlue; 
+        }
+    }
+
+    button {
+        width: 100%; 
+    }
+}
