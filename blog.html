@@ -37,10 +37,11 @@
 
     <!-- Main Content -->
     <main>
-
         <!-- Blog Post Section -->
         <section class="post">
             <div class="wrapper">
+
+                <!-- Side Content -->
                 <div class="sideContentContainer">
                     <div class="sideAbout">
                         <div class="imgContainer">
@@ -59,7 +60,9 @@
                             <li>Scelerisque nec pharetra id</li>
                         </ul>
                     </div> <!-- END .sideRecent -->
-                </div>
+                </div> <!-- END .sideContentContainer -->
+
+                <!-- Blog Post -->
                 <div class="postContent">
                     <h3>My Favourite Travel Destinations</h3>
                     <p>Monday, January 24th, 2022 by Harper</p>
@@ -90,7 +93,37 @@
         <!-- Comments Section -->
         <section class="comments">
             <div class="wrapper">
+                <!-- Comments Container -->
+                <div class="commentsContainer">
+                    <!-- First Comment -->
+                    <div class="commentOne">
+                        <div class="imgContainer">
+                            <img src="./assets/blog-image-3.jpg" alt="Icon of a person with short black hair">
+                            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                        </div> <!-- END .imgContainer -->
+                    </div> <!-- END .commentOne -->
+                    <!-- Second Comment -->
+                    <div class="commentTwo">
+                        <div class="imgContainer">
+                            <img src="./assets/blog-image-4.jpg" alt="Icon of a person with blonde hair blowing bubble gum">
+                        </div> <!-- END .imgContainer -->
+                        <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerissque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                    </div> <!-- END .commentTwo -->
+                </div> <!-- END .commentsContainer -->
 
+                <!-- Comment Form -->
+                <form action="submit" class="commentForm">
+                    <!-- Name Input -->
+                    <label for="name" class="sr-only">Name</label>
+                    <input type="text" id="name" placeholder="Name">
+                    <!-- Email Input -->
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+                    <!-- Comment Input -->
+                    <label for="comment" class="sr-only">Comment</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                    <button>Post Comment</button>
+                </form>
             </div> <!-- END .wrapper -->
         </section> <!-- END .comments -->
     </main>

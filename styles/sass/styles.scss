@@ -16,12 +16,17 @@
 // Header Styles
 @import './partials/header'; 
 
-// Sections Styles
-@import './partials/sections'; 
+// Homepage Styles
+@import './partials/homepage'; 
+
+// Subpage Styles - Blog & Contact
+@import './partials/subpage'; 
 
 // Forms Styles
+@import './partials/forms'; 
 
 // Footer Styles 
 @import './partials/footer'; 
 
 // Media Queries
+@import './partials/mediaQueries'; 
