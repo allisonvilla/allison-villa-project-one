@@ -1,23 +1,17 @@
-header.subpage,
-.blogPost {
-    background-color: $whiteShade; 
+// Side Content for both Blog and Contact
+.sideContentContainer {
+    display: flex;
+    flex-direction: column; 
+    margin-right: 38px; 
+    width: 30%;
 }
 
+// Blog Page
 section.blogPost {
+    background-color: $whiteShade;
+
     .wrapper {
         display: flex; 
-
-        .sideContentContainer {
-            display: flex;
-            flex-direction: column; 
-            margin-right: 38px; 
-            width: 30%;
-
-            .sideAbout {
-                display: flex;
-                flex-direction: column; 
-            }
-        }
 
         .mainBlogContainer {
             width: calc(70% - 38px);
@@ -25,11 +19,45 @@ section.blogPost {
     }
 }
 
-.sideAbout, 
-.sideRecent {
+.sideAbout {
+    display: flex;
+    flex-direction: column; 
     background-color: white;
     padding: 37px 37px; 
     margin-bottom: 16px; 
+
+    p {
+        margin-bottom: 0; 
+    }
+
+    h4 {
+        margin-top: 20px; 
+    }
+}
+
+.sideRecent {
+    background-color: white;
+    padding: 37px 37px; 
+    margin-bottom: 16px;
+    
+    ul {
+        padding: 30px 20px 0px 20px; 
+
+        li {
+            list-style-type: '\2022';
+            padding-left: 0.8rem;
+            margin-bottom: 10px; 
+        }
+    }
+
+    a {
+        color: $black; 
+
+        &:hover, 
+        &:focus {
+            color: $accent; 
+        }
+    }
 }
 
 .postContent {
@@ -47,9 +75,71 @@ section.blogPost {
     .commentTwo {
         background-color: white;
         padding: 45px 40px; 
+        display: flex; 
+
+        .imgContainer {
+            width: 10%; 
+
+            img {
+                min-width: 100%; 
+            }
+        }
+
+        .textContainer {
+            margin-left: 20px; 
+            width: calc(90% - 20px);
+
+            p {
+                margin: 0; 
+            }
+
+            .date {
+                display: inline-block;
+                width: 100%;  
+            }
+        }
     }
 
     .commentOne {
         margin-bottom: 20px;
+    }
+}
+
+// Contact Page 
+section.contactPage {
+    background-color: $whiteShade;
+
+    .wrapper {
+        display: flex;
+    } 
+}
+
+.contactSide {
+    display: flex;
+    flex-direction: column; 
+    background-color: white;
+    padding: 37px 37px; 
+    margin-bottom: 16px; 
+
+    ul {
+        display: flex;
+
+        li {
+            text-decoration: none; 
+            color: $duskBlue; 
+            font-size: 1.5rem; 
+            margin-right: 30px; 
+        }
+    }
+
+    p {
+        margin: 0 0; 
+    }
+
+    .harperEmail {
+        font-family: $headingFont; 
+        font-weight: bold; 
+        font-size: 1.2rem; 
+        margin: 20px 0; 
     }
 }

@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@400;700&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/bac3997482.js" crossorigin="anonymous"></script>
     <title>Contact Harper</title>
 </head>
@@ -33,6 +34,47 @@
             <h1>Contact Me</h1>
         </div> <!-- END .wrapper -->
     </header>
+
+    <main>
+        <section class="contactPage">
+            <div class="wrapper">
+                <!-- Side Content -->
+                <div class="sideContentContainer">
+                    <div class="contactSide">
+                        <div class="socials">
+                            <ul>
+                                <li><i class="fab fa-facebook-f"></i></li>
+                                <li><i class="fab fa-twitter"></i></li>
+                                <li><i class="fab fa-linkedin-in"></i></li>
+                                <li><i class="fab fa-instagram"></i></li>
+                            </ul>
+                        </div>
+                        <span class="harperEmail">info@email.com</span>
+                        <div class="harperAddress">
+                            <p>123 - 456 - 7890</p>
+                            <p>123 Queen Street West, Unit 10</p>
+                            <p>Toronto, Ontario</p>
+                            <p>M5V2D5</p>
+                        </div> 
+                    </div> <!-- END .contactSide -->
+                </div> <!-- END .SideContentContainer -->
+
+                <!-- Contact Form -->
+                <form action="submit" class="contactForm">
+                    <!-- Name Input -->
+                    <label for="name" class="sr-only">Name</label>
+                    <input type="text" id="name" placeholder="Name">
+                    <!-- Email Input -->
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email" placeholder="Email address">
+                    <!-- Message Input -->
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="8" placeholder="Message"></textarea>
+                    <button>Submit</button>
+                </form>
+            </div> <!-- END .wrapper -->
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer>

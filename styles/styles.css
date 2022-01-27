@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -406,6 +407,7 @@ header.homepage .headerContainer .headerTitle img {
 
 header.subpage {
   padding-bottom: 95px;
+  background-color: #f6f6f6;
 }
 header.subpage .wrapper {
   position: relative;
@@ -589,17 +591,7 @@ header.subpage .wrapper h1 {
   margin: 95px 18px;
 }
 
-header.subpage,
-.blogPost {
-  background-color: #f6f6f6;
-}
-
-section.blogPost .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-section.blogPost .wrapper .sideContentContainer {
+.sideContentContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,7 +602,20 @@ section.blogPost .wrapper .sideContentContainer {
   margin-right: 38px;
   width: 30%;
 }
-section.blogPost .wrapper .sideContentContainer .sideAbout {
+
+section.blogPost {
+  background-color: #f6f6f6;
+}
+section.blogPost .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section.blogPost .wrapper .mainBlogContainer {
+  width: calc(70% - 38px);
+}
+
+.sideAbout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,16 +623,35 @@ section.blogPost .wrapper .sideContentContainer .sideAbout {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: white;
+  padding: 37px 37px;
+  margin-bottom: 16px;
 }
-section.blogPost .wrapper .mainBlogContainer {
-  width: calc(70% - 38px);
+.sideAbout p {
+  margin-bottom: 0;
+}
+.sideAbout h4 {
+  margin-top: 20px;
 }
 
-.sideAbout,
 .sideRecent {
   background-color: white;
   padding: 37px 37px;
   margin-bottom: 16px;
+}
+.sideRecent ul {
+  padding: 30px 20px 0px 20px;
+}
+.sideRecent ul li {
+  list-style-type: "•";
+  padding-left: 0.8rem;
+  margin-bottom: 10px;
+}
+.sideRecent a {
+  color: #171717;
+}
+.sideRecent a:hover, .sideRecent a:focus {
+  color: #f38d8d;
 }
 
 .postContent {
@@ -645,9 +669,76 @@ section.blogPost .wrapper .mainBlogContainer {
 .commentsContainer .commentTwo {
   background-color: white;
   padding: 45px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.commentsContainer .commentOne .imgContainer,
+.commentsContainer .commentTwo .imgContainer {
+  width: 10%;
+}
+.commentsContainer .commentOne .imgContainer img,
+.commentsContainer .commentTwo .imgContainer img {
+  min-width: 100%;
+}
+.commentsContainer .commentOne .textContainer,
+.commentsContainer .commentTwo .textContainer {
+  margin-left: 20px;
+  width: calc(90% - 20px);
+}
+.commentsContainer .commentOne .textContainer p,
+.commentsContainer .commentTwo .textContainer p {
+  margin: 0;
+}
+.commentsContainer .commentOne .textContainer .date,
+.commentsContainer .commentTwo .textContainer .date {
+  display: inline-block;
+  width: 100%;
 }
 .commentsContainer .commentOne {
   margin-bottom: 20px;
+}
+
+section.contactPage {
+  background-color: #f6f6f6;
+}
+section.contactPage .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  padding: 37px 37px;
+  margin-bottom: 16px;
+}
+.contactSide ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactSide ul li {
+  text-decoration: none;
+  color: #227284;
+  font-size: 1.5rem;
+  margin-right: 30px;
+}
+.contactSide p {
+  margin: 0 0;
+}
+.contactSide .harperEmail {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 20px 0;
 }
 
 form {
@@ -730,6 +821,10 @@ form textarea:focus {
 }
 form button {
   width: 100%;
+}
+
+.contactForm {
+  width: calc(70% - 38px);
 }
 
 footer {
