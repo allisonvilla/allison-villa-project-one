@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@400;700&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@400;700&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/bac3997482.js" crossorigin="anonymous"></script>
     <title>Harper's Blog</title>
 </head>
@@ -26,7 +27,7 @@
     </nav> <!-- END .mainNav -->
 
     <!-- Header -->
-    <header>
+    <header class="subpage">
         <div class="headerImgContainer">
             <img src="./assets/blog-image-1.jpg" alt="Close up of a cherry blossom tree">
         </div> <!-- END .headerImgContainer -->
@@ -38,9 +39,8 @@
     <!-- Main Content -->
     <main>
         <!-- Blog Post Section -->
-        <section class="post">
+        <section class="blogPost">
             <div class="wrapper">
-
                 <!-- Side Content -->
                 <div class="sideContentContainer">
                     <div class="sideAbout">
@@ -62,70 +62,84 @@
                     </div> <!-- END .sideRecent -->
                 </div> <!-- END .sideContentContainer -->
 
-                <!-- Blog Post -->
-                <div class="postContent">
-                    <h3>My Favourite Travel Destinations</h3>
-                    <p>Monday, January 24th, 2022 by Harper</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum perferendis sed fugit, obcaecati
-                        quis quia commodi consectetur unde cum voluptate ratione a labore, nostrum, repellendus
-                        distinctio veritatis consequatur nobis dolorum!</p>
-                    <p>Nesciunt temporibus optio sunt sed sit beatae dicta labore quisquam quis hic aspernatur eligendi
-                        suscipit, magni culpa, esse voluptas eaque ex odit placeat cum! Similique obcaecati dolore in
-                        suscipit quisquam.</p>
-                    <p>Aspernatur, alias quos dolores veniam, suscipit a laborum sequi nemo illo expedita provident sit?
-                        Reprehenderit, fuga autem. Nesciunt beatae eaque alias iusto quia debitis adipisci numquam id
-                        magni! Quasi, saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus earum
-                        amet quidem illum voluptatum accusantium impedit laborum sunt maiores provident! Ullam quidem
-                        sint optio assumenda possimus minus modi nostrum magni.</p>
-                    <p>Nisi placeat culpa corporis nesciunt possimus dolorem, dolorum laboriosam fuga maxime, vitae
-                        officiis magnam voluptatem minus. Velit magnam, quas eligendi porro necessitatibus, beatae
-                        mollitia, omnis expedita ea incidunt aliquid nostrum?</p>
-                    <p>Explicabo officia animi itaque beatae saepe ducimus voluptate excepturi odit labore similique
-                        quaerat qui, natus recusandae sequi sit facilis omnis ex? Voluptates quos aperiam fuga commodi
-                        adipisci harum architecto dolor.</p>
-                    <p>Deleniti dicta ea optio ex soluta fugit mollitia quisquam rem tempore possimus voluptate hic sit
-                        dolorum quos excepturi consequuntur, saepe veniam maxime inventore iste reiciendis, ad
-                        blanditiis itaque. Veniam, necessitatibus?</p>
-                </div> <!-- END .postContent -->
-            </div> <!-- END .wrapper -->
-        </section> <!-- END .post -->
+                <!-- Blog Post and Comments -->
+                <div class="mainBlogContainer">
+                    <div class="postContent">
+                        <h3>My Favourite Travel Destinations</h3>
+                        <p>Monday, January 24th, 2022 by Harper</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum perferendis sed fugit,
+                            obcaecati
+                            quis quia commodi consectetur unde cum voluptate ratione a labore, nostrum, repellendus
+                            distinctio veritatis consequatur nobis dolorum!</p>
+                        <p>Nesciunt temporibus optio sunt sed sit beatae dicta labore quisquam quis hic aspernatur
+                            eligendi
+                            suscipit, magni culpa, esse voluptas eaque ex odit placeat cum! Similique obcaecati dolore
+                            in
+                            suscipit quisquam.</p>
+                        <p>Aspernatur, alias quos dolores veniam, suscipit a laborum sequi nemo illo expedita provident
+                            sit?
+                            Reprehenderit, fuga autem. Nesciunt beatae eaque alias iusto quia debitis adipisci numquam
+                            id
+                            magni! Quasi, saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+                            earum
+                            amet quidem illum voluptatum accusantium impedit laborum sunt maiores provident! Ullam
+                            quidem
+                            sint optio assumenda possimus minus modi nostrum magni.</p>
+                        <p>Nisi placeat culpa corporis nesciunt possimus dolorem, dolorum laboriosam fuga maxime, vitae
+                            officiis magnam voluptatem minus. Velit magnam, quas eligendi porro necessitatibus, beatae
+                            mollitia, omnis expedita ea incidunt aliquid nostrum?</p>
+                        <p>Explicabo officia animi itaque beatae saepe ducimus voluptate excepturi odit labore similique
+                            quaerat qui, natus recusandae sequi sit facilis omnis ex? Voluptates quos aperiam fuga
+                            commodi
+                            adipisci harum architecto dolor.</p>
+                        <p>Deleniti dicta ea optio ex soluta fugit mollitia quisquam rem tempore possimus voluptate hic
+                            sit
+                            dolorum quos excepturi consequuntur, saepe veniam maxime inventore iste reiciendis, ad
+                            blanditiis itaque. Veniam, necessitatibus?</p>
+                    </div> <!-- END .postContent -->
 
-        <!-- Comments Section -->
-        <section class="comments">
-            <div class="wrapper">
-                <!-- Comments Container -->
-                <div class="commentsContainer">
-                    <!-- First Comment -->
-                    <div class="commentOne">
-                        <div class="imgContainer">
-                            <img src="./assets/blog-image-3.jpg" alt="Icon of a person with short black hair">
-                            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
-                        </div> <!-- END .imgContainer -->
-                    </div> <!-- END .commentOne -->
-                    <!-- Second Comment -->
-                    <div class="commentTwo">
-                        <div class="imgContainer">
-                            <img src="./assets/blog-image-4.jpg" alt="Icon of a person with blonde hair blowing bubble gum">
-                        </div> <!-- END .imgContainer -->
-                        <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerissque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
-                    </div> <!-- END .commentTwo -->
-                </div> <!-- END .commentsContainer -->
+                    <!-- Comments Container -->
+                    <div class="commentsContainer">
+                        <!-- First Comment -->
+                        <div class="commentOne">
+                            <div class="imgContainer">
+                                <img src="./assets/blog-image-3.jpg" alt="Icon of a person with short black hair">
+                                <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend
+                                    lacus, vitae
+                                    ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec
+                                    euismod scelerisque
+                                    ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                            </div> <!-- END .imgContainer -->
+                        </div> <!-- END .commentOne -->
+                        <!-- Second Comment -->
+                        <div class="commentTwo">
+                            <div class="imgContainer">
+                                <img src="./assets/blog-image-4.jpg"
+                                    alt="Icon of a person with blonde hair blowing bubble gum">
+                            </div> <!-- END .imgContainer -->
+                            <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc
+                                sollicitudin
+                                ultrices. Donec euismod scelerissque ligula. Maecenas eu varius risus, eu aliquet arcu.
+                            </p>
+                        </div> <!-- END .commentTwo -->
+                    </div> <!-- END .commentsContainer -->
 
-                <!-- Comment Form -->
-                <form action="submit" class="commentForm">
-                    <!-- Name Input -->
-                    <label for="name" class="sr-only">Name</label>
-                    <input type="text" id="name" placeholder="Name">
-                    <!-- Email Input -->
-                    <label for="email" class="sr-only">Email</label>
-                    <input type="email" id="email" placeholder="Email">
-                    <!-- Comment Input -->
-                    <label for="comment" class="sr-only">Comment</label>
-                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
-                    <button>Post Comment</button>
-                </form>
+                    <!-- Comment Form -->
+                    <form action="submit" class="commentForm">
+                        <!-- Name Input -->
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+                        <!-- Email Input -->
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" placeholder="Email">
+                        <!-- Comment Input -->
+                        <label for="comment" class="sr-only">Comment</label>
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                        <button>Post Comment</button>
+                    </form>
+                </div> <!-- END .mainBlogContainer -->
             </div> <!-- END .wrapper -->
-        </section> <!-- END .comments -->
+        </section> <!-- END .blogPost -->
     </main>
 
     <!-- Footer Section -->

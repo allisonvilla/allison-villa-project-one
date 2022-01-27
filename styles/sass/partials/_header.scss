@@ -36,3 +36,13 @@ header.homepage {
 }
 
 // Blog and Contact Header
+header.subpage {
+    .wrapper {
+        position: relative;
+
+        h1 {
+            position: absolute; 
+            top: -60px;  
+        }
+    }
+}

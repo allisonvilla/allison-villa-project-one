@@ -1,0 +1,15 @@
+section.blogPost {
+    .wrapper {
+        display: flex; 
+
+        .sideContentContainer {
+            display: flex;
+            flex-direction: column; 
+
+            .sideAbout {
+                display: flex;
+                flex-direction: column; 
+            }
+        }
+    }
+}

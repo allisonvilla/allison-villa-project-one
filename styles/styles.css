@@ -404,6 +404,14 @@ header.homepage .headerContainer .headerTitle img {
   right: -50px;
 }
 
+header.subpage .wrapper {
+  position: relative;
+}
+header.subpage .wrapper h1 {
+  position: absolute;
+  top: -60px;
+}
+
 .aboutSummary {
   background-color: #f6f6f6;
   padding-top: 110px;
@@ -576,6 +584,30 @@ header.homepage .headerContainer .headerTitle img {
 .gallery .wrapper .imgContainer {
   width: calc(33% - 36px);
   margin: 95px 18px;
+}
+
+section.blogPost .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section.blogPost .wrapper .sideContentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+section.blogPost .wrapper .sideContentContainer .sideAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer {
