@@ -129,6 +129,11 @@ section.contactPage {
             color: $duskBlue; 
             font-size: 1.5rem; 
             margin-right: 30px; 
+
+            a:hover, 
+            a:focus {
+                color: $lightBlueGrey; 
+            }
         }
     }
 

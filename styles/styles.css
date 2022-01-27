@@ -731,6 +731,10 @@ section.contactPage .wrapper {
   font-size: 1.5rem;
   margin-right: 30px;
 }
+.contactSide ul li a:hover,
+.contactSide ul li a:focus {
+  color: #b9dde7;
+}
 .contactSide p {
   margin: 0 0;
 }
