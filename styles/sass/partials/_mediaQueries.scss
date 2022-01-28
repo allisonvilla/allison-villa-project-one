@@ -3,7 +3,7 @@
     header.homepage .headerContainer .headerTitle {
         h1 {
             img {
-                    bottom: 15%; 
+                bottom: 15%; 
             }
         }
     }
@@ -18,7 +18,7 @@
     header.homepage .headerContainer .headerTitle {
         h1 {
             img {
-                    bottom: 24%; 
+                bottom: 24%; 
             }
         }
     }
@@ -49,3 +49,183 @@
     }
 }
 
+@media (max-width: 801px) {
+    // Homepage - Header Title
+    header.homepage .headerContainer .headerTitle {
+        width: calc(60% - 70px);
+        margin-left: 70px;
+
+        h1 {
+            font-size: 4.5rem; 
+
+            img {
+                width: 15vw; 
+                bottom: 19%; 
+                right: -11%; 
+            }
+        }
+    }
+
+    // Homepage - Who's Harper? Section
+    .aboutSummary {
+        padding-top: 130px; 
+        padding-bottom: 90px; 
+
+        .wrapper {
+            justify-content: center;
+
+            .aboutContainer {
+                width: 80%; 
+            }
+        }
+    }
+
+    // Homepage - Site Overview Section
+    .siteOverview {
+        .wrapper {
+            margin-top: 60px; 
+            padding-bottom: 80px; 
+        }
+    }
+
+    // Homepage - Blog Previews Section
+    .blogPreview {
+        .blogPreviewOne {
+            flex-direction: column; 
+            align-items: center;
+
+            .imgContainer {
+                width: 80%; 
+            }
+
+            .textContainer {
+                width: 80%;
+                padding-left: 0;
+                padding-top: 20px;
+                text-align: center;
+
+                p {
+                    text-align: left; 
+                }
+
+                button {
+                    margin-bottom: 80px;
+                }
+            }
+        }
+
+        .blogPreviewTwo {
+            flex-direction: column-reverse;
+            align-items: center; 
+
+            .imgContainer {
+                width: 80%; 
+                bottom: 0px;
+                left: -22px;
+
+                img {
+                    box-shadow: 20px 20px $lightBlueGrey, 205px 20px $lightBlueGrey;
+                }
+            }
+
+            .textContainer {
+                width: 80%;
+                padding-right: 0;
+                padding-top: 65px;
+                text-align: center; 
+
+                p {
+                    text-align: left; 
+                }
+
+                .rightAlignedButton {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    // Homepage - About Harper's Journey
+    .aboutJourney {
+        .wrapper {
+            .imgContainer {
+                width: calc(32% - 20px); 
+            }
+
+            .textContainer {
+                width: calc(68% - 85px);
+                margin-left: 85px; 
+                margin-top: 70px; 
+                margin-bottom: 70px; 
+            }
+        }
+    }
+
+    // Blog Page 
+    section.blogPost {
+        .wrapper {
+            flex-direction: column-reverse; 
+
+            .sideContentContainer {
+                flex-direction: row; 
+                justify-content: space-between;
+                width: 100%; 
+                margin-right: 0; 
+                padding-bottom: 80px; 
+
+                .sideAbout {
+                    width: 49%;
+                    align-items: center; 
+
+                    img {
+                        width: 250px;
+                        height: 200px; 
+                        object-fit: cover;
+                    }
+
+                    h4 {
+                        position: relative;
+                        right: 56px;
+                    }
+                }
+
+                .sideRecent {
+                    width: 49%; 
+                }
+            }
+
+            .mainBlogContainer {
+                width: 100%; 
+            }
+        }
+    }
+
+    // Contact Page
+    section.contactPage {
+        .wrapper {
+            flex-direction: column;
+
+            .sideContentContainer {
+                width: 100%; 
+                margin-right: 0; 
+                text-align: center; 
+
+                .contactSide {
+                    ul {
+                        justify-content: center;
+                        position: relative;
+                        left: 12px;
+                    }
+                }
+            }
+
+            .contactForm {
+                width: 100%; 
+            }
+        }
+    }
+}
+
+@media (max-width: 501px) {
+
+}

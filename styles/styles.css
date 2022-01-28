@@ -874,3 +874,165 @@ footer p {
     margin-left: 100px;
   }
 }
+@media (max-width: 801px) {
+  header.homepage .headerContainer .headerTitle {
+    width: calc(60% - 70px);
+    margin-left: 70px;
+  }
+  header.homepage .headerContainer .headerTitle h1 {
+    font-size: 4.5rem;
+  }
+  header.homepage .headerContainer .headerTitle h1 img {
+    width: 15vw;
+    bottom: 19%;
+    right: -11%;
+  }
+
+  .aboutSummary {
+    padding-top: 130px;
+    padding-bottom: 90px;
+  }
+  .aboutSummary .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aboutSummary .wrapper .aboutContainer {
+    width: 80%;
+  }
+
+  .siteOverview .wrapper {
+    margin-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .blogPreview .blogPreviewOne {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogPreview .blogPreviewOne .imgContainer {
+    width: 80%;
+  }
+  .blogPreview .blogPreviewOne .textContainer {
+    width: 80%;
+    padding-left: 0;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .blogPreview .blogPreviewOne .textContainer p {
+    text-align: left;
+  }
+  .blogPreview .blogPreviewOne .textContainer button {
+    margin-bottom: 80px;
+  }
+  .blogPreview .blogPreviewTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogPreview .blogPreviewTwo .imgContainer {
+    width: 80%;
+    bottom: 0px;
+    left: -22px;
+  }
+  .blogPreview .blogPreviewTwo .imgContainer img {
+    -webkit-box-shadow: 20px 20px #b9dde7, 205px 20px #b9dde7;
+            box-shadow: 20px 20px #b9dde7, 205px 20px #b9dde7;
+  }
+  .blogPreview .blogPreviewTwo .textContainer {
+    width: 80%;
+    padding-right: 0;
+    padding-top: 65px;
+    text-align: center;
+  }
+  .blogPreview .blogPreviewTwo .textContainer p {
+    text-align: left;
+  }
+  .blogPreview .blogPreviewTwo .textContainer .rightAlignedButton {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .aboutJourney .wrapper .imgContainer {
+    width: calc(32% - 20px);
+  }
+  .aboutJourney .wrapper .textContainer {
+    width: calc(68% - 85px);
+    margin-left: 85px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  section.blogPost .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  section.blogPost .wrapper .sideContentContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-right: 0;
+    padding-bottom: 80px;
+  }
+  section.blogPost .wrapper .sideContentContainer .sideAbout {
+    width: 49%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.blogPost .wrapper .sideContentContainer .sideAbout img {
+    width: 250px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.blogPost .wrapper .sideContentContainer .sideAbout h4 {
+    position: relative;
+    right: 56px;
+  }
+  section.blogPost .wrapper .sideContentContainer .sideRecent {
+    width: 49%;
+  }
+  section.blogPost .wrapper .mainBlogContainer {
+    width: 100%;
+  }
+
+  section.contactPage .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.contactPage .wrapper .sideContentContainer {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+  section.contactPage .wrapper .sideContentContainer .contactSide ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    left: 12px;
+  }
+  section.contactPage .wrapper .contactForm {
+    width: 100%;
+  }
+}

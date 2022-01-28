@@ -25,8 +25,8 @@ header.homepage {
 
             h1 {
                 font-size: calc(450% + 60 * (100vw - 925px) / 610); 
-                // This calculation was based on this article: https://zellwk.com/blog/viewport-based-typography/#precision - which allows me to control the re-sizing of this element based on the viewport 
-                //font-size: 7.5rem;  <- The original desktop design size, left here for posterity
+                // This calculation was based on this article: https://zellwk.com/blog/viewport-based-typography/#precision - which allows me to control the re-sizing of this font-size based on the viewport 
+                //font-size: 7.5rem;  <- The original desktop design size, left here for reference
                 position: relative;  
             }
 
