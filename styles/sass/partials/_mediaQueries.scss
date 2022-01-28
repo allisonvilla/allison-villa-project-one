@@ -1,0 +1,51 @@
+@media (max-width: 1301px) {
+    // Homepage - Header Title
+    header.homepage .headerContainer .headerTitle {
+        h1 {
+            img {
+                    bottom: 15%; 
+            }
+        }
+    }
+}
+
+@media (max-width: 1041px) {
+    .wrapper {
+        width: 90%; 
+    }
+
+    // Homepage - Header Title
+    header.homepage .headerContainer .headerTitle {
+        h1 {
+            img {
+                    bottom: 24%; 
+            }
+        }
+    }
+
+    // Homepage - Blog Post Previews
+    .blogPreview {
+        .blogPreviewOne {
+            .textContainer {
+                padding-left: 70px; 
+                padding-top: 80px; 
+            }
+        }
+
+        .blogPreviewTwo {
+            .textContainer {
+                padding-right: 70px; 
+            }
+        }
+    }
+
+    // Homepage - About Harper's Journey
+    .aboutJourney .wrapper {
+        .textContainer {
+            width: calc(75% - 100px);
+            margin-top: 80px;
+            margin-left: 100px; 
+        }
+    }
+}
+

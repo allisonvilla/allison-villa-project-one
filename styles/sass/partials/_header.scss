@@ -1,7 +1,7 @@
 // Homepage Header
 header.homepage {
     background-color: $lightBlueGrey; 
-    height: 100vh; 
+    //height: 100vh; 
 
     .headerContainer {
         display: flex; 
@@ -9,6 +9,7 @@ header.homepage {
         position: relative; 
 
         .imgContainer {
+            max-width: 40%; 
             img {
                 box-shadow: 20px 18px white; 
                 position: relative; 
@@ -19,17 +20,21 @@ header.homepage {
         .headerTitle {
             display: flex; 
             align-items: center; 
+            width: calc(60% - 95px); 
+            margin-left: 95px;
 
             h1 {
-                font-size: 7.5rem; 
-                position: relative; 
-                margin-left: 84px; 
+                font-size: calc(450% + 60 * (100vw - 925px) / 610); 
+                // This calculation was based on this article: https://zellwk.com/blog/viewport-based-typography/#precision - which allows me to control the re-sizing of this element based on the viewport 
+                //font-size: 7.5rem;  <- The original desktop design size, left here for posterity
+                position: relative;  
             }
 
             img {
                 position: absolute; 
-                bottom: 6px;
-                right: -50px; 
+                bottom: 7%;
+                right: -10%; 
+                width: 11.8vw; 
             }
         }
     }

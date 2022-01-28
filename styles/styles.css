@@ -370,7 +370,6 @@ button:hover, button:focus {
 
 header.homepage {
   background-color: #b9dde7;
-  height: 100vh;
 }
 header.homepage .headerContainer {
   display: -webkit-box;
@@ -379,6 +378,9 @@ header.homepage .headerContainer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
+}
+header.homepage .headerContainer .imgContainer {
+  max-width: 40%;
 }
 header.homepage .headerContainer .imgContainer img {
   -webkit-box-shadow: 20px 18px white;
@@ -393,16 +395,18 @@ header.homepage .headerContainer .headerTitle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: calc(60% - 95px);
+  margin-left: 95px;
 }
 header.homepage .headerContainer .headerTitle h1 {
-  font-size: 7.5rem;
+  font-size: calc(450% + 60 * (100vw - 925px) / 610);
   position: relative;
-  margin-left: 84px;
 }
 header.homepage .headerContainer .headerTitle img {
   position: absolute;
-  bottom: 6px;
-  right: -50px;
+  bottom: 7%;
+  right: -10%;
+  width: 11.8vw;
 }
 
 header.subpage {
@@ -840,4 +844,33 @@ footer p {
   margin: 0 auto;
   padding: 12px 0;
   line-height: 1rem;
+}
+
+@media (max-width: 1301px) {
+  header.homepage .headerContainer .headerTitle h1 img {
+    bottom: 15%;
+  }
+}
+@media (max-width: 1041px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  header.homepage .headerContainer .headerTitle h1 img {
+    bottom: 24%;
+  }
+
+  .blogPreview .blogPreviewOne .textContainer {
+    padding-left: 70px;
+    padding-top: 80px;
+  }
+  .blogPreview .blogPreviewTwo .textContainer {
+    padding-right: 70px;
+  }
+
+  .aboutJourney .wrapper .textContainer {
+    width: calc(75% - 100px);
+    margin-top: 80px;
+    margin-left: 100px;
+  }
 }
