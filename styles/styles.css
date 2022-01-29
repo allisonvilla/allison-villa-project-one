@@ -1154,6 +1154,10 @@ footer p {
     margin-bottom: 45px;
   }
 
+  .blogPreview .blogPreviewTwo .imgContainer {
+    left: 0px;
+  }
+
   .aboutJourney .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1272,10 +1276,6 @@ form #email {
 
   header.homepage .headerContainer .headerTitle h1 img {
     bottom: 26%;
-  }
-
-  .blogPreview .blogPreviewTwo .imgContainer {
-    left: 0px;
   }
 
   .aboutJourney .wrapper .imgContainer {

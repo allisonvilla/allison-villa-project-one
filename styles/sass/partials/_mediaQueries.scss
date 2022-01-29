@@ -355,6 +355,15 @@
         }
     }
 
+    // Homepage - Blog Post Previews
+    .blogPreview {
+        .blogPreviewTwo {
+            .imgContainer {
+                left: 0px; 
+            }
+        }
+    }
+
     // Homepage - About Harper's Journey
     .aboutJourney {
         .wrapper {
@@ -493,15 +502,6 @@
         h1 {
             img {
                 bottom: 26%; 
-            }
-        }
-    }
-
-    // Homepage - Blog Post Previews
-    .blogPreview {
-        .blogPreviewTwo {
-            .imgContainer {
-                left: 0px; 
             }
         }
     }
