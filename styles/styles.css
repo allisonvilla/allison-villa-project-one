@@ -1205,6 +1205,9 @@ footer p {
     width: 100%;
   }
 
+  header.subpage {
+    padding-bottom: 80px;
+  }
   header.subpage .headerImgContainer {
     height: 30vh;
   }
@@ -1212,6 +1215,17 @@ footer p {
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%;
+  }
+
+  section.blogPost .wrapper .sideContentContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.blogPost .wrapper .sideContentContainer .sideAbout,
+section.blogPost .wrapper .sideContentContainer .sideRecent {
+    width: 100%;
   }
 
   .mainBlogContainer .commentsContainer .commentOne,
@@ -1244,6 +1258,13 @@ form #email {
     font-size: 0.8rem;
   }
 }
+@media (max-width: 431px) {
+  header.subpage .wrapper h1 {
+    font-size: 3.3rem;
+    line-height: 3rem;
+    top: -40px;
+  }
+}
 @media (max-width: 401px) {
   p {
     font-size: 0.9rem;
@@ -1261,17 +1282,6 @@ form #email {
     width: 70%;
   }
 
-  section.blogPost .wrapper .sideContentContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  section.blogPost .wrapper .sideContentContainer .sideAbout,
-section.blogPost .wrapper .sideContentContainer .sideRecent {
-    width: 100%;
-  }
-
   header.subpage.contact .wrapper h1 {
     font-size: 3rem;
     line-height: 3rem;
@@ -1284,7 +1294,7 @@ section.blogPost .wrapper .sideContentContainer .sideRecent {
     right: -8%;
   }
 }
-@media (max-width: 321px) {
+@media (max-width: 331px) {
   header.homepage .headerContainer .headerTitle h1 img {
     bottom: 36%;
     right: -8%;
@@ -1315,7 +1325,7 @@ section.blogPost .wrapper .sideContentContainer .sideRecent {
   }
 
   header.subpage.contact .wrapper h1 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     line-height: 3rem;
     top: -40px;
   }
