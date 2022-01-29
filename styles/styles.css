@@ -1037,16 +1037,45 @@ footer p {
     width: 100%;
   }
 }
-@media (max-width: 501px) {
-  .wrapper {
-    width: 95%;
+@media (max-width: 710px) {
+  header.homepage .headerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
+  header.homepage .headerContainer .imgContainer {
+    max-width: 80%;
+  }
+  header.homepage .headerContainer .imgContainer img {
+    -webkit-box-shadow: 15px 15px white;
+            box-shadow: 15px 15px white;
+  }
+  header.homepage .headerContainer .headerTitle {
+    width: auto;
+    margin-left: 0;
+    margin-top: 60px;
+  }
+  header.homepage .headerContainer .headerTitle h1 {
+    font-size: calc(350% + 30 * (100vw - 300px) / 200);
+    padding-top: 25px;
+  }
+  header.homepage .headerContainer .headerTitle h1 img {
+    width: 22vw;
+    right: -9%;
+    bottom: 9%;
+  }
+}
+@media (max-width: 651px) {
   .mainNav {
     display: none;
   }
 
   .mobileNav {
+    display: block;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -1100,31 +1129,24 @@ footer p {
 .mobileNav ul.subMenu a:focus {
     color: white;
   }
+}
+@media (max-width: 635px) {
+  header.homepage .headerContainer .headerTitle h1 img {
+    right: -9%;
+    bottom: 15%;
+  }
+}
+@media (max-width: 531px) {
+  header.homepage .headerContainer .headerTitle h1 img {
+    right: -8%;
+    bottom: 21%;
+  }
+}
+@media (max-width: 501px) {
+  .wrapper {
+    width: 95%;
+  }
 
-  header.homepage .headerContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header.homepage .headerContainer .imgContainer {
-    max-width: 80%;
-  }
-  header.homepage .headerContainer .imgContainer img {
-    -webkit-box-shadow: 15px 15px white;
-            box-shadow: 15px 15px white;
-  }
-  header.homepage .headerContainer .headerTitle {
-    width: auto;
-    margin-left: 0;
-    margin-top: 60px;
-  }
-  header.homepage .headerContainer .headerTitle h1 {
-    font-size: calc(350% + 30 * (100vw - 300px) / 200);
-  }
   header.homepage .headerContainer .headerTitle h1 img {
     width: 25vw;
     bottom: 21%;
@@ -1290,13 +1312,13 @@ form #email {
 }
 @media (max-width: 351px) {
   header.homepage .headerContainer .headerTitle h1 img {
-    bottom: 32%;
+    bottom: 25%;
     right: -8%;
   }
 }
 @media (max-width: 331px) {
   header.homepage .headerContainer .headerTitle h1 img {
-    bottom: 36%;
+    bottom: 27%;
     right: -8%;
   }
 

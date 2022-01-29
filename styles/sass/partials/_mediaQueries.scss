@@ -230,18 +230,47 @@
     }
 }
 
-// Phones and other small mobile devices
-@media (max-width: 501px) {
-    .wrapper {
-        width: 95%; 
-    }
+@media (max-width: 710px) {
+    header.homepage .headerContainer {
+        flex-direction: column-reverse; 
+        align-items: center; 
 
+        .imgContainer {
+            max-width: 80%; 
+
+            img {
+                box-shadow: 15px 15px white;
+            }
+        }
+
+        .headerTitle {
+            width: auto; 
+            margin-left: 0; 
+            margin-top: 60px; 
+
+            h1 {
+                font-size: calc(350% + 30 * (100vw - 300px) / 200);
+                //font-size: 5rem; 
+                padding-top: 25px; 
+
+                img {
+                    width: 22vw;
+                    right: -9%;
+                    bottom: 9%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 651px) {
     // Mobile Nav
     .mainNav {
         display: none;
     }
 
     .mobileNav {
+        display: block;
         position: sticky;
         top: 0; 
         z-index: 10; 
@@ -292,29 +321,42 @@
             }
         }
     }
+}
+
+@media (max-width: 635px) {
+    // Homepage - Header Title
+    header.homepage .headerContainer .headerTitle {
+        h1 {
+            img {
+                right: -9%;
+                bottom: 15%;
+            }
+        }
+    }
+}
+
+@media (max-width: 531px) {
+    // Homepage - Header Title
+    header.homepage .headerContainer .headerTitle {
+        h1 {
+            img {
+                right: -8%;
+                bottom: 21%;
+            }
+        }
+    }
+}
+
+// Phones and other small mobile devices
+@media (max-width: 501px) {
+    .wrapper {
+        width: 95%; 
+    }
 
     // Homepage - Header
     header.homepage .headerContainer {
-        flex-direction: column-reverse; 
-        align-items: center; 
-
-        .imgContainer {
-            max-width: 80%; 
-
-            img {
-                box-shadow: 15px 15px white;
-            }
-        }
-
         .headerTitle {
-            width: auto; 
-            margin-left: 0; 
-            margin-top: 60px; 
-
             h1 {
-                font-size: calc(350% + 30 * (100vw - 300px) / 200);
-                //font-size: 5rem; 
-
                 img {
                     width: 25vw;
                     bottom: 21%;
@@ -532,7 +574,7 @@
     header.homepage .headerContainer .headerTitle {
         h1 {
             img {
-                bottom: 32%;
+                bottom: 25%;
                 right: -8%;
             }
         }
@@ -544,7 +586,7 @@
     header.homepage .headerContainer .headerTitle {
         h1 {
             img {
-                bottom: 36%;
+                bottom: 27%;
                 right: -8%;
             }
         }
