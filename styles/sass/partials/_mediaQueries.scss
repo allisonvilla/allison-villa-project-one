@@ -1,3 +1,11 @@
+// Hide Mobile Navigation 
+@media (min-width: 501px) {
+    .mobileNav {
+        display: none; 
+    }
+}
+
+// Smaller desktops
 @media (max-width: 1301px) {
     // Homepage - Header Title
     header.homepage .headerContainer .headerTitle {
@@ -49,6 +57,7 @@
     }
 }
 
+// Tablets
 @media (max-width: 801px) {
     // Homepage - Header Title
     header.homepage .headerContainer .headerTitle {
@@ -182,11 +191,6 @@
                         height: 200px; 
                         object-fit: cover;
                     }
-
-                    h4 {
-                        position: relative;
-                        right: 56px;
-                    }
                 }
 
                 .sideRecent {
@@ -226,6 +230,370 @@
     }
 }
 
+// Phones and other small mobile devices
 @media (max-width: 501px) {
+    .wrapper {
+        width: 95%; 
+    }
 
+    // Mobile Nav
+    .mainNav {
+        display: none;
+    }
+
+    .mobileNav {
+        position: sticky;
+        top: 0; 
+        z-index: 10; 
+        background-color: $lightBlueGrey;
+
+        .hamburger {
+            display: flex; 
+            justify-content: flex-end;
+            padding: 10px 15px; 
+
+            ul {
+                display: flex; 
+                flex-direction: column;
+                align-items: center; 
+            }
+
+            li {
+                color: white; 
+                font-size: 2rem; 
+                position: relative; 
+                padding: 0px 10px; 
+                transition: 0.2s; 
+
+                &:hover,
+                &:focus, 
+                &:focus-within {
+                    color: $black;  
+
+                    .subMenu {
+                        height: auto;   
+                    }
+                }
+            }
+        }
+
+        ul.subMenu {
+            position: absolute; 
+            right: -15px; 
+            height: 0;
+            overflow: hidden; 
+            background-color: $lightBlueGrey; 
+            padding: 5px 5px; 
+            border-radius: 5%; 
+
+            a:hover, 
+            a:focus {
+                color: white;
+            }
+        }
+    }
+
+    // Homepage - Header
+    header.homepage .headerContainer {
+        flex-direction: column-reverse; 
+        align-items: center; 
+
+        .imgContainer {
+            max-width: 80%; 
+
+            img {
+                box-shadow: 15px 15px white;
+            }
+        }
+
+        .headerTitle {
+            width: auto; 
+            margin-left: 0; 
+            margin-top: 60px; 
+
+            h1 {
+                font-size: calc(350% + 30 * (100vw - 300px) / 200);
+                //font-size: 5rem; 
+
+                img {
+                    width: 25vw;
+                    bottom: 21%;
+                    right: -10%;
+                }
+            }
+        }
+    }
+
+    // Homepage - Site Overview
+    .siteOverview {
+        .siteOverviewImg {
+            height: 30vh; 
+
+            img {
+                object-fit: cover; 
+                height: 100%; 
+            }
+        }
+    }
+
+    .siteOverview .wrapper {
+        .overviewContainer {
+            width: 100%;
+            margin: auto; 
+
+            .iconContainer {
+                right: -2vw; 
+            }
+
+            .textContainer {
+                margin-left: 30px; 
+
+                p {
+                    margin-bottom: 45px; 
+                }
+            }
+        }
+    }
+
+    // Homepage - About Harper's Journey
+    .aboutJourney {
+        .wrapper {
+            flex-direction: column; 
+            align-items: center; 
+
+            .imgContainer {
+                width: 100%; 
+                margin-top: 70px; 
+                margin-bottom: 20px; 
+                display: flex;
+                justify-content: center;
+            }
+
+            .textContainer {
+                width: 85%;
+                margin: 30px auto 70px auto; 
+                display: flex; 
+                flex-direction: column;
+            }
+        }
+    }
+
+    // Homepage - Image Gallery
+    .gallery {
+        .wrapper {
+            flex-direction: column; 
+            align-items: center; 
+            margin: 45px auto; 
+
+            .imgContainer {
+                width: 90%; 
+                margin: 0; 
+                padding: 20px 0 20px 0; 
+                
+                img {
+                    width: 100%; 
+                }
+            }
+        }
+    }
+
+    // Subpage Headers
+    header.subpage {
+        .headerImgContainer {
+            height: 30vh; 
+
+            img {
+                object-fit: cover;
+                height: 100%; 
+            }
+        }
+    }
+
+    // Blog Page
+    .mainBlogContainer {
+        .commentsContainer {
+            .commentOne,
+            .commentTwo {
+                padding: 40px 30px; 
+                .imgContainer {
+                    width: 20%; 
+                }
+
+                .textContainer {
+                    margin-left: 30px; 
+                    width: calc(80% - 30px);
+                }
+            }
+        }
+    }
+
+    section.blogPost {
+        .wrapper {
+            .sideContentContainer {
+                .sideRecent {
+                    padding: 37px 20px; 
+                }
+            }
+        }
+    }
+
+    // Forms
+    form {
+        #name,
+        #email {
+            padding: 20px 30px 15px 30px; 
+        }
+
+        textarea {
+            padding: 30px 30px; 
+        }
+    }
+
+    // Footer
+    footer p {
+        font-size: 0.8rem; 
+    }
+}
+
+@media (max-width: 401px) {
+    p {
+        font-size: 0.9rem; 
+    }
+
+    // Homepage - Header Title
+    header.homepage .headerContainer .headerTitle {
+        h1 {
+            img {
+                bottom: 26%; 
+            }
+        }
+    }
+
+    // Homepage - Blog Post Previews
+    .blogPreview {
+        .blogPreviewTwo {
+            .imgContainer {
+                left: 0px; 
+            }
+        }
+    }
+
+    // Homepage - About Harper's Journey
+    .aboutJourney {
+        .wrapper {
+            .imgContainer {
+                width: 70%; 
+            }
+        }
+    }
+
+    // Blog Page
+    section.blogPost {
+        .wrapper {
+            .sideContentContainer {
+                flex-direction: column;
+
+                .sideAbout,
+                .sideRecent {
+                    width: 100%; 
+                }
+            }
+        }
+    }
+
+    // Contact Page
+    header.subpage.contact {
+        .wrapper {
+            h1 {
+                font-size: 3rem; 
+                line-height: 3rem; 
+                top: -40px; 
+            }
+        }
+    }
+}
+
+@media (max-width: 351px) {
+    // Homepage - Header Title
+    header.homepage .headerContainer .headerTitle {
+        h1 {
+            img {
+                bottom: 32%;
+                right: -8%;
+            }
+        }
+    }
+}
+
+@media (max-width: 321px) {
+    // Homepage - Header Title
+    header.homepage .headerContainer .headerTitle {
+        h1 {
+            img {
+                bottom: 36%;
+                right: -8%;
+            }
+        }
+    }
+
+    // Homepage - Image Gallery 
+    .gallery {
+        .wrapper {
+            .imgContainer {
+                padding: 10px 0 10px 0; 
+            }
+        }
+    }
+
+    // Blog Page
+    .mainBlogContainer {
+        .commentsContainer {
+            .commentOne,
+            .commentTwo {
+                flex-wrap: wrap; 
+                
+                .imgContainer {
+                    width: 30%; 
+                    margin-bottom: 10px; 
+                }
+
+                .textContainer {
+                    margin-left: 0;
+                    width: 100%;
+
+                    span.date {
+                        padding-bottom: 10px; 
+                    }
+                }
+            }
+        }
+    }
+
+    // Contact Page
+    header.subpage.contact {
+        .wrapper {
+            h1 {
+                font-size: 2.5rem; 
+                line-height: 3rem; 
+                top: -40px; 
+            }
+        }
+    }
+
+    // Forms
+    form {
+        #name,
+        #email {
+            font-size: 67%; 
+        }
+
+        textarea {
+            font-size: 67%; 
+        }
+    }
+
+    // Footer
+    footer p {
+        font-size: 0.6rem; 
+    }
 }

@@ -846,6 +846,11 @@ footer p {
   line-height: 1rem;
 }
 
+@media (min-width: 501px) {
+  .mobileNav {
+    display: none;
+  }
+}
 @media (max-width: 1301px) {
   header.homepage .headerContainer .headerTitle h1 img {
     bottom: 15%;
@@ -1003,10 +1008,6 @@ footer p {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  section.blogPost .wrapper .sideContentContainer .sideAbout h4 {
-    position: relative;
-    right: 56px;
-  }
   section.blogPost .wrapper .sideContentContainer .sideRecent {
     width: 49%;
   }
@@ -1034,5 +1035,300 @@ footer p {
   }
   section.contactPage .wrapper .contactForm {
     width: 100%;
+  }
+}
+@media (max-width: 501px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  .mainNav {
+    display: none;
+  }
+
+  .mobileNav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #b9dde7;
+  }
+  .mobileNav .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 10px 15px;
+  }
+  .mobileNav .hamburger ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobileNav .hamburger li {
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    padding: 0px 10px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .mobileNav .hamburger li:hover, .mobileNav .hamburger li:focus, .mobileNav .hamburger li:focus-within {
+    color: #171717;
+  }
+  .mobileNav .hamburger li:hover .subMenu, .mobileNav .hamburger li:focus .subMenu, .mobileNav .hamburger li:focus-within .subMenu {
+    height: auto;
+  }
+  .mobileNav ul.subMenu {
+    position: absolute;
+    right: -15px;
+    height: 0;
+    overflow: hidden;
+    background-color: #b9dde7;
+    padding: 5px 5px;
+    border-radius: 5%;
+  }
+  .mobileNav ul.subMenu a:hover,
+.mobileNav ul.subMenu a:focus {
+    color: white;
+  }
+
+  header.homepage .headerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header.homepage .headerContainer .imgContainer {
+    max-width: 80%;
+  }
+  header.homepage .headerContainer .imgContainer img {
+    -webkit-box-shadow: 15px 15px white;
+            box-shadow: 15px 15px white;
+  }
+  header.homepage .headerContainer .headerTitle {
+    width: auto;
+    margin-left: 0;
+    margin-top: 60px;
+  }
+  header.homepage .headerContainer .headerTitle h1 {
+    font-size: calc(350% + 30 * (100vw - 300px) / 200);
+  }
+  header.homepage .headerContainer .headerTitle h1 img {
+    width: 25vw;
+    bottom: 21%;
+    right: -10%;
+  }
+
+  .siteOverview .siteOverviewImg {
+    height: 30vh;
+  }
+  .siteOverview .siteOverviewImg img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+
+  .siteOverview .wrapper .overviewContainer {
+    width: 100%;
+    margin: auto;
+  }
+  .siteOverview .wrapper .overviewContainer .iconContainer {
+    right: -2vw;
+  }
+  .siteOverview .wrapper .overviewContainer .textContainer {
+    margin-left: 30px;
+  }
+  .siteOverview .wrapper .overviewContainer .textContainer p {
+    margin-bottom: 45px;
+  }
+
+  .aboutJourney .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutJourney .wrapper .imgContainer {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aboutJourney .wrapper .textContainer {
+    width: 85%;
+    margin: 30px auto 70px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .gallery .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 45px auto;
+  }
+  .gallery .wrapper .imgContainer {
+    width: 90%;
+    margin: 0;
+    padding: 20px 0 20px 0;
+  }
+  .gallery .wrapper .imgContainer img {
+    width: 100%;
+  }
+
+  header.subpage .headerImgContainer {
+    height: 30vh;
+  }
+  header.subpage .headerImgContainer img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+
+  .mainBlogContainer .commentsContainer .commentOne,
+.mainBlogContainer .commentsContainer .commentTwo {
+    padding: 40px 30px;
+  }
+  .mainBlogContainer .commentsContainer .commentOne .imgContainer,
+.mainBlogContainer .commentsContainer .commentTwo .imgContainer {
+    width: 20%;
+  }
+  .mainBlogContainer .commentsContainer .commentOne .textContainer,
+.mainBlogContainer .commentsContainer .commentTwo .textContainer {
+    margin-left: 30px;
+    width: calc(80% - 30px);
+  }
+
+  section.blogPost .wrapper .sideContentContainer .sideRecent {
+    padding: 37px 20px;
+  }
+
+  form #name,
+form #email {
+    padding: 20px 30px 15px 30px;
+  }
+  form textarea {
+    padding: 30px 30px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 401px) {
+  p {
+    font-size: 0.9rem;
+  }
+
+  header.homepage .headerContainer .headerTitle h1 img {
+    bottom: 26%;
+  }
+
+  .blogPreview .blogPreviewTwo .imgContainer {
+    left: 0px;
+  }
+
+  .aboutJourney .wrapper .imgContainer {
+    width: 70%;
+  }
+
+  section.blogPost .wrapper .sideContentContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.blogPost .wrapper .sideContentContainer .sideAbout,
+section.blogPost .wrapper .sideContentContainer .sideRecent {
+    width: 100%;
+  }
+
+  header.subpage.contact .wrapper h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    top: -40px;
+  }
+}
+@media (max-width: 351px) {
+  header.homepage .headerContainer .headerTitle h1 img {
+    bottom: 32%;
+    right: -8%;
+  }
+}
+@media (max-width: 321px) {
+  header.homepage .headerContainer .headerTitle h1 img {
+    bottom: 36%;
+    right: -8%;
+  }
+
+  .gallery .wrapper .imgContainer {
+    padding: 10px 0 10px 0;
+  }
+
+  .mainBlogContainer .commentsContainer .commentOne,
+.mainBlogContainer .commentsContainer .commentTwo {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mainBlogContainer .commentsContainer .commentOne .imgContainer,
+.mainBlogContainer .commentsContainer .commentTwo .imgContainer {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+  .mainBlogContainer .commentsContainer .commentOne .textContainer,
+.mainBlogContainer .commentsContainer .commentTwo .textContainer {
+    margin-left: 0;
+    width: 100%;
+  }
+  .mainBlogContainer .commentsContainer .commentOne .textContainer span.date,
+.mainBlogContainer .commentsContainer .commentTwo .textContainer span.date {
+    padding-bottom: 10px;
+  }
+
+  header.subpage.contact .wrapper h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    top: -40px;
+  }
+
+  form #name,
+form #email {
+    font-size: 67%;
+  }
+  form textarea {
+    font-size: 67%;
+  }
+
+  footer p {
+    font-size: 0.6rem;
   }
 }
