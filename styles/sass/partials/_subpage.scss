@@ -162,5 +162,16 @@ section.contactPage {
 section.formSuccessPage {
     .wrapper {
         margin: 100px auto 100px auto; 
+
+        a {
+            padding-bottom: 5px; 
+            border-bottom: 3px solid $duskBlue; 
+            transition: 0.3s; 
+
+            &:hover,
+            &:focus {
+                border-bottom: 3px solid $accent; 
+            }
+        }
     }
 }

@@ -767,6 +767,15 @@ section.contactPage .wrapper {
 section.formSuccessPage .wrapper {
   margin: 100px auto 100px auto;
 }
+section.formSuccessPage .wrapper a {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #227284;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+section.formSuccessPage .wrapper a:hover, section.formSuccessPage .wrapper a:focus {
+  border-bottom: 3px solid #f38d8d;
+}
 
 form {
   display: -webkit-box;
