@@ -510,8 +510,8 @@ header.subpage .wrapper h1 {
   top: -45px;
 }
 .blogPreviewOne .imgContainer img {
-  -webkit-box-shadow: 20px 20px #68b0c1, -155px 20px #68b0c1;
-          box-shadow: 20px 20px #68b0c1, -155px 20px #68b0c1;
+  -webkit-box-shadow: 20px 20px #68b0c1, -155px 20px #68b0c1, -350px 20px #68b0c1;
+          box-shadow: 20px 20px #68b0c1, -155px 20px #68b0c1, -350px 20px #68b0c1;
 }
 .blogPreviewOne .textContainer {
   padding-left: 120px;
@@ -526,8 +526,8 @@ header.subpage .wrapper h1 {
   bottom: -30px;
 }
 .blogPreviewTwo .imgContainer img {
-  -webkit-box-shadow: 20px 20px #b9dde7, 155px 20px #b9dde7;
-          box-shadow: 20px 20px #b9dde7, 155px 20px #b9dde7;
+  -webkit-box-shadow: 20px 20px #b9dde7, 155px 20px #b9dde7, 350px 20px #b9dde7;
+          box-shadow: 20px 20px #b9dde7, 155px 20px #b9dde7, 350px 20px #b9dde7;
 }
 .blogPreviewTwo .textContainer {
   padding-right: 125px;
