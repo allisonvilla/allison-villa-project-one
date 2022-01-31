@@ -300,7 +300,7 @@
                     color: $black;  
 
                     .subMenu {
-                        height: auto;   
+                        height: auto;
                     }
                 }
             }
@@ -311,9 +311,13 @@
             right: -15px; 
             height: 0;
             overflow: hidden; 
-            background-color: $lightBlueGrey; 
+            background-color: $lightBlueGrey;  
             padding: 5px 5px; 
             border-radius: 5%; 
+
+            li {
+                padding-bottom: 10px; 
+            }
 
             a:hover, 
             a:focus {
@@ -330,6 +334,37 @@
             img {
                 right: -9%;
                 bottom: 15%;
+            }
+        }
+    }
+
+    // Homepage - Site Overview
+    .siteOverview {
+        .siteOverviewImg {
+            height: 30vh; 
+
+            img {
+                object-fit: cover; 
+                height: 100%; 
+            }
+        }
+    }
+
+    .siteOverview .wrapper {
+        .overviewContainer {
+            width: 100%;
+            margin: auto; 
+
+            .iconContainer {
+                right: -2vw; 
+            }
+
+            .textContainer {
+                margin-left: 30px; 
+
+                p {
+                    margin-bottom: 45px; 
+                }
             }
         }
     }
@@ -361,37 +396,6 @@
                     width: 25vw;
                     bottom: 21%;
                     right: -10%;
-                }
-            }
-        }
-    }
-
-    // Homepage - Site Overview
-    .siteOverview {
-        .siteOverviewImg {
-            height: 30vh; 
-
-            img {
-                object-fit: cover; 
-                height: 100%; 
-            }
-        }
-    }
-
-    .siteOverview .wrapper {
-        .overviewContainer {
-            width: 100%;
-            margin: auto; 
-
-            .iconContainer {
-                right: -2vw; 
-            }
-
-            .textContainer {
-                margin-left: 30px; 
-
-                p {
-                    margin-bottom: 45px; 
                 }
             }
         }
