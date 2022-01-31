@@ -33,11 +33,11 @@
 
         a {
             transition: 0.3s;
-            border-bottom: 3px double transparent; 
+            border-bottom: 3px dotted transparent; 
 
             &:hover,
             &:focus {
-                border-bottom: 3px double $accent; 
+                border-bottom: 3px dotted $accent; 
             }
         }
 

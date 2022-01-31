@@ -355,10 +355,10 @@ button:hover, button:focus {
 .mainNav ul a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  border-bottom: 3px double transparent;
+  border-bottom: 3px dotted transparent;
 }
 .mainNav ul a:hover, .mainNav ul a:focus {
-  border-bottom: 3px double #227284;
+  border-bottom: 3px dotted #227284;
 }
 .mainNav ul a.logo {
   font-size: 2rem;
@@ -366,7 +366,7 @@ button:hover, button:focus {
   padding-right: 25px;
 }
 .mainNav ul a.logo:hover, .mainNav ul a.logo:focus {
-  border-bottom: 3px double transparent;
+  border-bottom: 3px solid transparent;
   color: white;
 }
 .mainNav ul a.currentPage {
@@ -467,10 +467,10 @@ header.subpage .wrapper h1 {
 .siteOverview .wrapper .overviewContainer a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  border-bottom: 3px double transparent;
+  border-bottom: 3px dotted transparent;
 }
 .siteOverview .wrapper .overviewContainer a:hover, .siteOverview .wrapper .overviewContainer a:focus {
-  border-bottom: 3px double #f38d8d;
+  border-bottom: 3px dotted #f38d8d;
 }
 .siteOverview .wrapper .overviewContainer .iconContainer {
   display: -webkit-box;
@@ -1164,10 +1164,10 @@ footer p {
   .mobileNav ul.subMenu a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    border-bottom: 3px double transparent;
+    border-bottom: 3px dotted transparent;
   }
   .mobileNav ul.subMenu a:hover, .mobileNav ul.subMenu a:focus {
-    border-bottom: 3px double #227284;
+    border-bottom: 3px dotted #227284;
   }
 }
 @media (max-width: 635px) {
@@ -1348,6 +1348,14 @@ form #email {
     font-size: 3rem;
     line-height: 3rem;
     top: -40px;
+  }
+
+  form #name,
+form #email {
+    font-size: 85%;
+  }
+  form textarea {
+    font-size: 85%;
   }
 }
 @media (max-width: 351px) {

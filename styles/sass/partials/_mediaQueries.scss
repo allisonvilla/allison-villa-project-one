@@ -321,11 +321,11 @@
 
             a {
                 transition: 0.3s;
-                border-bottom: 3px double transparent; 
+                border-bottom: 3px dotted transparent; 
 
                 &:hover,
                 &:focus {
-                    border-bottom: 3px double $duskBlue; 
+                    border-bottom: 3px dotted $duskBlue; 
                 }
             }
         }
@@ -574,6 +574,18 @@
                 line-height: 3rem; 
                 top: -40px; 
             }
+        }
+    }
+
+    // Forms
+    form {
+        #name,
+        #email {
+            font-size: 85%; 
+        }
+
+        textarea {
+            font-size: 85%; 
         }
     }
 }
