@@ -352,20 +352,25 @@ button:hover, button:focus {
 .mainNav ul li {
   margin: 20px 25px 20px 25px;
 }
+.mainNav ul a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-bottom: 3px solid transparent;
+}
+.mainNav ul a:hover, .mainNav ul a:focus {
+  border-bottom: 3px solid #227284;
+}
 .mainNav ul a.logo {
   font-size: 2rem;
   padding-left: 25px;
   padding-right: 25px;
 }
-.mainNav ul a:hover,
-.mainNav ul a:focus {
+.mainNav ul a.logo:hover, .mainNav ul a.logo:focus {
+  border-bottom: 3px solid transparent;
   color: white;
 }
 .mainNav ul a.currentPage {
   color: white;
-}
-.mainNav ul a.currentPage:hover, .mainNav ul a.currentPage:focus {
-  color: #171717;
 }
 
 header.homepage {
@@ -1135,8 +1140,8 @@ footer p {
     font-size: 2rem;
     position: relative;
     padding: 0px 10px;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .mobileNav .hamburger li:hover, .mobileNav .hamburger li:focus, .mobileNav .hamburger li:focus-within {
     color: #171717;
@@ -1156,9 +1161,13 @@ footer p {
   .mobileNav ul.subMenu li {
     padding-bottom: 10px;
   }
-  .mobileNav ul.subMenu a:hover,
-.mobileNav ul.subMenu a:focus {
-    color: white;
+  .mobileNav ul.subMenu a {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-bottom: 3px solid transparent;
+  }
+  .mobileNav ul.subMenu a:hover, .mobileNav ul.subMenu a:focus {
+    border-bottom: 3px solid #227284;
   }
 }
 @media (max-width: 635px) {
