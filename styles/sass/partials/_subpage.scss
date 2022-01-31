@@ -33,6 +33,15 @@ section.blogPost {
     h4 {
         margin-top: 20px; 
     }
+
+    a {
+        transition: 0.3s; 
+
+        &:hover,
+        &:focus {
+            color: $accent; 
+        }
+    }
 }
 
 .sideRecent {

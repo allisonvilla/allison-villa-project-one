@@ -31,6 +31,16 @@
         position: relative;
         margin: 20px 25px; 
 
+        a {
+            transition: 0.3s;
+            border-bottom: 3px solid transparent; 
+
+            &:hover,
+            &:focus {
+                border-bottom: 3px solid $accent; 
+            }
+        }
+
         .iconContainer {
             display: flex;
             flex-direction: column;

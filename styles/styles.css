@@ -459,6 +459,14 @@ header.subpage .wrapper h1 {
   position: relative;
   margin: 20px 25px;
 }
+.siteOverview .wrapper .overviewContainer a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-bottom: 3px solid transparent;
+}
+.siteOverview .wrapper .overviewContainer a:hover, .siteOverview .wrapper .overviewContainer a:focus {
+  border-bottom: 3px solid #f38d8d;
+}
 .siteOverview .wrapper .overviewContainer .iconContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -636,6 +644,13 @@ section.blogPost .wrapper .mainBlogContainer {
 }
 .sideAbout h4 {
   margin-top: 20px;
+}
+.sideAbout a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.sideAbout a:hover, .sideAbout a:focus {
+  color: #f38d8d;
 }
 
 .sideRecent {
