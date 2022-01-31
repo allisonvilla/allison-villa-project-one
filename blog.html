@@ -42,7 +42,7 @@
     <!-- Header -->
     <header class="subpage blog">
         <div class="headerImgContainer">
-            <img src="./assets/blog-image-1.jpg" alt="Close up of a cherry blossom tree">
+            <img src="./assets/blog-image-1.jpg" alt="Close up of a cherry blossom tree" aria-hidden="true">
         </div> <!-- END .headerImgContainer -->
         <div class="wrapper">
             <h1>Blog</h1>
@@ -145,7 +145,7 @@
                     </div> <!-- END .commentsContainer -->
 
                     <!-- Comment Form -->
-                    <form action="submit" class="commentForm">
+                    <form class="commentForm" data-netlify="true">
                         <!-- Name Input -->
                         <label for="name" class="sr-only">Name</label>
                         <input type="text" id="name" placeholder="Name">

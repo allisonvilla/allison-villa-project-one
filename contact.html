@@ -42,7 +42,7 @@
 
     <header class="subpage contact">
         <div class="headerImgContainer">
-            <img src="./assets/contact-image-1.jpg" alt="Purple fog">
+            <img src="./assets/contact-image-1.jpg" alt="Purple fog" aria-hidden="true">
         </div> <!-- END .headerImgContainer -->
         <div class="wrapper">
             <h1>Contact Me</h1>
@@ -74,7 +74,7 @@
                 </div> <!-- END .SideContentContainer -->
 
                 <!-- Contact Form -->
-                <form action="submit" class="contactForm">
+                <form class="contactForm" data-netlify="true">
                     <!-- Name Input -->
                     <label for="name" class="sr-only">Name</label>
                     <input type="text" id="name" placeholder="Name">
