@@ -1,6 +1,7 @@
 // Currently, unless you comment out Feature One, Feature Two will not work because of a TypeError (variables defined in Feature One are null on the blog page)
 
-// After some googling, I'm using `try...finally` to make my second feature run regardless of the TypeError. I'm sure this is not best practice, but it works for now until I figure out how to make specific JS blocks only run on specific pages. 😅
+// After some googling, I'm using `try...finally` to make my second feature run regardless of the TypeError. 
+// I'm sure this is not best practice, but it works for now until I learn how to make specific JS blocks only run on specific pages. 😅
 
 try {
 
@@ -50,4 +51,5 @@ commentForm.addEventListener ('submit', function(e) {
 window.onclick = function() {
     tyMessage.style.display = 'none'; 
 }
+
 }
