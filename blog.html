@@ -144,7 +144,7 @@
                     </div> <!-- END .commentsContainer -->
 
                     <!-- Comment Form -->
-                    <form name="commentForm" class="commentForm" data-netlify="true" action="/formSuccess.html">
+                    <form name="commentForm" class="commentForm" id="commentForm">
                         <!-- Name Input -->
                         <label for="name" class="sr-only">Name</label>
                         <input type="text" name="name" id="name" placeholder="Name" required>
@@ -154,7 +154,9 @@
                         <!-- Comment Input -->
                         <label for="comment" class="sr-only">Comment</label>
                         <textarea name="comment" id="comment" cols="30" rows="8" placeholder="Comment" required></textarea>
-                        <button>Post Comment</button>
+                        <!-- Popup Thank You Message on Submit -->
+                        <p id="thankYouMessage">Thanks for submitting a comment, friend! It has been sent for approval.</p>
+                        <button id="commentSubmit">Post Comment</button>
                     </form>
                 </div> <!-- END .mainBlogContainer -->
             </div> <!-- END .wrapper -->

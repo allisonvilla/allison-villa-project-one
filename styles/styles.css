@@ -868,6 +868,28 @@ form button {
   width: calc(70% - 38px);
 }
 
+#commentForm {
+  position: relative;
+}
+
+#thankYouMessage {
+  display: none;
+  width: 65%;
+  background-color: rgba(185, 221, 231, 0.6);
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  right: 17%;
+  bottom: 60px;
+  margin: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#thankYouMessage .visible {
+  display: inline-block;
+}
+
 footer {
   text-align: center;
   background-color: #171717;
