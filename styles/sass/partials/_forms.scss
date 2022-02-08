@@ -55,6 +55,41 @@ form {
     width: calc(70% - 38px);
 }
 
+// Newsletter Pop-up
+#newsletterPopUp {
+    visibility: hidden; 
+    background-color: $whiteShade;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between;
+    width: 60%; 
+    position: fixed; 
+    top: 25vh;
+    right: 20vw; 
+    border: 2px solid $accent; 
+    padding: 40px 40px; 
+
+    form {
+        margin: 0; 
+
+        #email {
+            width: 100%; 
+            padding: 12px 30px;
+        }
+    }
+
+    span.close {
+        margin-top: 30px; 
+        cursor: pointer; 
+
+        &:hover,
+        &:focus {
+            text-decoration: underline; 
+        }
+    }
+}
+
 // Comment Form - Thank You Message
 #commentForm {
     position: relative; 
@@ -72,8 +107,4 @@ form {
     bottom: 60px; 
     margin: 0; 
     transition: 0.5s; 
-
-    .visible {
-        display: inline-block; 
-    }
 }

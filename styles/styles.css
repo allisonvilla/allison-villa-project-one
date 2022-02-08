@@ -868,6 +868,44 @@ form button {
   width: calc(70% - 38px);
 }
 
+#newsletterPopUp {
+  visibility: hidden;
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  position: fixed;
+  top: 25vh;
+  right: 20vw;
+  border: 2px solid #f38d8d;
+  padding: 40px 40px;
+}
+#newsletterPopUp form {
+  margin: 0;
+}
+#newsletterPopUp form #email {
+  width: 100%;
+  padding: 12px 30px;
+}
+#newsletterPopUp span.close {
+  margin-top: 30px;
+  cursor: pointer;
+}
+#newsletterPopUp span.close:hover, #newsletterPopUp span.close:focus {
+  text-decoration: underline;
+}
+
 #commentForm {
   position: relative;
 }
@@ -885,9 +923,6 @@ form button {
   margin: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-#thankYouMessage .visible {
-  display: inline-block;
 }
 
 footer {
