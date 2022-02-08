@@ -1,12 +1,16 @@
 // Currently, unless you comment out Feature One, Feature Two will not work because of a TypeError (variables defined in Feature One are null on the blog page)
 
+// After some googling, I'm using `try...finally` to make my second feature run regardless of the TypeError. I'm sure this is not best practice, but it works for now until I figure out how to make specific JS blocks only run on specific pages. 😅
+
+try {
+
 // FEATURE ONE: Newsletter Sign-Up on Homepage Scroll 
 
 // Store HTML elements in variables
 const newsletterPopUp = document.querySelector('#newsletterPopUp');
 const closeSpan = document.querySelector('.close'); 
 
-// Variable that checks if the pop up has already happened 
+// Variable that states if the pop up has already happened 
 let hasPoppedUp = false; 
 
 // After scrolling 900px from the top, show newsletter pop up
@@ -21,6 +25,8 @@ window.onscroll = function() {
 closeSpan.addEventListener ('click', function() {
     newsletterPopUp.style.visibility = 'hidden'; 
 }); 
+
+} finally {
 
 // FEATURE TWO: Comment Confirmation Message on Blog Page 
 
@@ -43,4 +49,5 @@ commentForm.addEventListener ('submit', function(e) {
 // Hide the thank you message when user clicks anywhere on the page
 window.onclick = function() {
     tyMessage.style.display = 'none'; 
+}
 }
