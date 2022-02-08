@@ -28,8 +28,6 @@ closeSpan.addEventListener ('click', function() {
 const tyMessage = document.querySelector('#thankYouMessage');
 const commentForm = document.querySelector('#commentForm'); 
 const commenterName = document.querySelector('#name'); 
-const commenterEmail = document.querySelector('#email'); 
-const commentContent = document.querySelector('#comment'); 
 
 commentForm.addEventListener ('submit', function(e) {
     e.preventDefault(); 
@@ -39,9 +37,7 @@ commentForm.addEventListener ('submit', function(e) {
     tyMessage.style.display = 'inline-block'; 
     tyMessage.textContent = `Thanks for submitting a comment, ${username}! It has been sent for approval. 😊`; 
     // Clear the form
-    commenterName.value = '';
-    commenterEmail.value = '';
-    commentContent.value = '';
+    commentForm.reset(); 
 }); 
 
 // Hide the thank you message when user clicks anywhere on the page
