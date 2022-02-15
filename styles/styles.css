@@ -305,6 +305,10 @@ nav ul a {
   font-weight: bold;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   width: 80%;
   max-width: 1260px;
