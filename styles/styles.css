@@ -898,6 +898,12 @@ form button {
   width: 100%;
   padding: 12px 30px;
 }
+#newsletterPopUp button {
+  -webkit-transition: 0s;
+  transition: 0s;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
 #newsletterPopUp span.close {
   margin-top: 30px;
   cursor: pointer;

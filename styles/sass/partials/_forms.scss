@@ -79,6 +79,11 @@ form {
         }
     }
 
+    button {
+        transition: 0s; // This stops the button from taking longer to disappear than the rest of the div on close
+        transition: background-color 0.3s; 
+    }
+
     span.close {
         margin-top: 30px; 
         cursor: pointer; 
